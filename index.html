@@ -15,7 +15,7 @@
 	}
 	.paddle {
 		top: 0;
-		height: 400px;
+		height: 200px;
 		width: 10px;
 		position: absolute;
 	}
@@ -129,25 +129,25 @@
 			case 'ArrowDown':
 				if (!paddleRightTimer) {
 					paddleRightDirection = 10;
-					paddleRightTimer = setInterval(moveRightPaddle, 100);
+					paddleRightTimer = setInterval(moveRightPaddle, 200);
 				}
 				break;
 			case 'ArrowUp':
 				if (!paddleRightTimer) {
 					paddleRightDirection = -10;
-					paddleRightTimer = setInterval(moveRightPaddle, 100);
+					paddleRightTimer = setInterval(moveRightPaddle, 200);
 				}
 				break;
 			case 'KeyS':
 				if (!paddleLeftTimer) {
 					paddleLeftDirection = 10;
-					paddleLeftTimer = setInterval(moveLeftPaddle, 100);
+					paddleLeftTimer = setInterval(moveLeftPaddle, 200);
 				}
 				break;
 			case 'KeyW':
 				if (!paddleLeftTimer) {
 					paddleLeftDirection = -10;
-					paddleLeftTimer = setInterval(moveLeftPaddle, 100);
+					paddleLeftTimer = setInterval(moveLeftPaddle, 200);
 				}
 				break;
 		}
