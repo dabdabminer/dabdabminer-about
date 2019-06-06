@@ -129,25 +129,25 @@
 			case 'ArrowDown':
 				if (!paddleRightTimer) {
 					paddleRightDirection = 10;
-					paddleRightTimer = setInterval(moveRightPaddle, 200);
+					paddleRightTimer = setInterval(moveRightPaddle, 50);
 				}
 				break;
 			case 'ArrowUp':
 				if (!paddleRightTimer) {
 					paddleRightDirection = -10;
-					paddleRightTimer = setInterval(moveRightPaddle, 200);
+					paddleRightTimer = setInterval(moveRightPaddle, 50);
 				}
 				break;
 			case 'KeyS':
 				if (!paddleLeftTimer) {
 					paddleLeftDirection = 10;
-					paddleLeftTimer = setInterval(moveLeftPaddle, 200);
+					paddleLeftTimer = setInterval(moveLeftPaddle, 50);
 				}
 				break;
 			case 'KeyW':
 				if (!paddleLeftTimer) {
 					paddleLeftDirection = -10;
-					paddleLeftTimer = setInterval(moveLeftPaddle, 200);
+					paddleLeftTimer = setInterval(moveLeftPaddle, 50);
 				}
 				break;
 		}
